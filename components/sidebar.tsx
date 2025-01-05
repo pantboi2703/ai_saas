@@ -64,7 +64,7 @@ interface SidebarProps {
 };
 
 const Sidebar = ({
-    apiLimitCount = 0,
+    apiLimitCounter = 0,
     isPro = false,
 }: SidebarProps) => {
     const pathname = usePathname();
@@ -107,7 +107,7 @@ const Sidebar = ({
             </div>
             <FreeCounter
               isPro={isPro}
-              apiLimitCount={apiLimitCount}
+              apiLimitCount={apiLimitCounter}
             />
         </div>
     );
